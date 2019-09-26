@@ -5,19 +5,51 @@
     <meta charset="utf-8">
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <style>
+        /*
+    
+        li {
+            color: darkgoldenrod        
+        }
+*/
+
+        h2 {
+            color: azure
+        }
+
+        .peri {
+            color: #b9c9ff
+        }
+
+        .fontbig {
+            font-size: 20px;
+        }
+
+        #fontheavy {
+            font-weight: 700;
+        }
+
+        #content p {
+
+            color: gray
+        }
+    </style>
+
+
 </head>
 
 <body>
 
     <header>
         <nav>
-            
+
 
             <a href="gallery.html">Gallery</a>
             <a href="contact.html">Contact Info</a>
         </nav>
     </header>
-    
+
     <h1 style="color:navy">Portfolio</h1>
 
     <main>
@@ -27,21 +59,36 @@
         <p>This is another paragraph element with <sub>subscript</sub> and <sup>superscript</sup> elements.</p>
 
         <ul>
-            <li>first item</li>
-            <li>second item</li>
+            <li id="fontheavy" style="color:black">first item</li>
+            <li class="peri">second item</li>
             <li>third item</li>
         </ul>
 
         <ol>
             <li>first item</li>
             <li>second&nbsp;item</li>
-            <li>third item</li>
+            <li class="fontbig peri">third item</li>
         </ol>
 
+        <div id="content">
+            <p>This is a descendant of the div with class "special."</p>
+        </div>
+
+        <div id="content">
+            <p>This is not a descendant.</p>
+            
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                
+            <p>This is a different color.</p>
+            </ul>
+            
+            
+        </div>
     </main>
 
-<footer>&copy; mitwispy</footer>
+    <footer class="peri">&copy; mitwispy</footer>
 
-</body>
-
-</html>
+</body></html>
